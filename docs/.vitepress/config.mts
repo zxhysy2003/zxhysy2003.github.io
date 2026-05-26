@@ -34,6 +34,7 @@ export default defineConfig({
             {
                 text: 'pitfalls',
                 items: [
+                    { text: 'wsl中端口占用问题', link: '/pitfalls/端口占用--wsl' },
                 ]
             }
         ],
