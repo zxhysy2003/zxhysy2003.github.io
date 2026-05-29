@@ -1,16 +1,40 @@
-# YangShi's Technical Notes
+---
+layout: home
 
-This is where I document my project work, code study notes, algorithm summaries, and development tool usage experience.
+hero:
+  name: "YangShi's Notes"
+  text: 个人技术笔记
+  tagline: 记录项目复盘、后端开发、算法练习和工程踩坑。
+  actions:
+    - theme: brand
+      text: 开始阅读
+      link: /projects/
+    - theme: alt
+      text: 查看踩坑记录
+      link: /pitfalls/
 
-## content categories
+features:
+  - title: 项目复盘
+    details: 梳理真实项目中的业务背景、技术选型、关键实现和复盘收获。
+    link: /projects/
+  - title: 踩坑记录
+    details: 记录开发环境、部署流程和日常工程问题的排查过程。
+    link: /pitfalls/
+  - title: 算法笔记
+    details: 汇总刷题过程中的典型题型、解法思路和易错点。
+    link: /algorithms/
+  - title: 开发工具
+    details: 沉淀 Git、WSL、VSCode、Vim 等工具的使用经验。
+    link: /tools/
+---
 
-- Project retrospectives: design ideas, code implementations, and lessons learned from real projects
-- Java backend: notes on Spring Boot, MyBatis, Redis, MySQL, and related topics
-- Algorithm notes: typical problems encountered while solving coding exercises
-- Development tools: experience using tools such as Git, WSL, VSCode, and Vim
+## 最近更新
 
-## recent plan
+- [智能课程学习系统项目复盘](/projects/course-system)
+- [WSL 端口占用问题](/pitfalls/端口占用--wsl)
 
-- Organize the intelligent course learning system project
-- Organize the recommendation system implementation process
-- Organize the setup process for Git and GitHub Pages
+## 后续整理
+
+- 推荐系统实现过程
+- Git 与 GitHub Pages 搭建流程
+- Java 后端常用组件笔记
