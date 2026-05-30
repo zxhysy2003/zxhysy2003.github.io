@@ -4,7 +4,9 @@
 
 ## 已整理
 
-- [智能课程学习系统项目复盘](./course-system)
+<!-- AUTO-GENERATED-NOTES:START -->
+- [智能课程学习系统项目复盘](/projects/course-system)
+<!-- AUTO-GENERATED-NOTES:END -->
 
 ## 待整理
 

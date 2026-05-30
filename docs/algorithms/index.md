@@ -2,6 +2,12 @@
 
 这里计划整理刷题过程中的典型题型、解法模板和易错点。
 
+## 已整理
+
+<!-- AUTO-GENERATED-NOTES:START -->
+_暂时还没有已整理的笔记。_
+<!-- AUTO-GENERATED-NOTES:END -->
+
 ## 待整理方向
 
 - 数组与双指针

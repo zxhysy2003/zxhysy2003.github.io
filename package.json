@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "notes:update": "node scripts/update-note-indexes.mjs",
+    "predocs:dev": "npm run notes:update",
     "docs:dev": "vitepress dev docs",
+    "predocs:build": "npm run notes:update",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },

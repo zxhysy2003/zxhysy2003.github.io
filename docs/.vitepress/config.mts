@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { createSidebar } from '../../scripts/note-catalog.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -15,24 +16,7 @@ export default defineConfig({
             { text: '踩坑记录', link: '/pitfalls/' }
         ],
 
-        sidebar: {
-            '/projects/': [
-                {
-                    text: '项目复盘',
-                    items: [
-                        { text: '智能课程学习系统', link: '/projects/course-system' },
-                    ]
-                }
-            ],
-            '/pitfalls/': [
-                {
-                    text: '踩坑记录',
-                    items: [
-                        { text: 'WSL 端口占用问题', link: '/pitfalls/端口占用--wsl' },
-                    ]
-                }
-            ]
-        },
+        sidebar: createSidebar(),
 
         search: {
             provider: 'local'

@@ -4,7 +4,9 @@
 
 ## 已整理
 
-- [WSL 端口占用问题](./端口占用--wsl)
+<!-- AUTO-GENERATED-NOTES:START -->
+- [WSL 端口占用问题](/pitfalls/端口占用--wsl)
+<!-- AUTO-GENERATED-NOTES:END -->
 
 ## 待整理
 

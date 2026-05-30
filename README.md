@@ -18,6 +18,7 @@ https://zxhysy2003.github.io/
 │   ├── pitfalls/               # 踩坑记录
 │   └── .vitepress/
 │       └── config.mts          # 导航栏和侧边栏配置
+├── scripts/                    # 自动扫描笔记并更新展示列表
 ├── .github/workflows/deploy.yml # GitHub Pages 自动部署流程
 ├── package.json                # 项目脚本和依赖
 └── README.md
@@ -75,39 +76,33 @@ docs/projects/recommendation-system.md
 docs/pitfalls/git-pages-deploy.md
 ```
 
-笔记内容至少要有一个一级标题：
+笔记内容至少要有一个一级标题。建议同时写入日期，首页会按照日期展示最近更新：
 
 ```md
+---
+date: 2026-05-30
+---
+
 # 推荐系统项目复盘
 
 这里写正文内容。
 ```
 
-### 2. 更新导航或侧边栏
+### 2. 自动更新展示列表
 
-如果希望新笔记显示在侧边栏里，编辑：
+新增笔记后执行：
 
-```text
-docs/.vitepress/config.mts
+```bash
+npm run notes:update
 ```
 
-在对应分类的 `items` 中加入一项，例如：
+脚本会自动扫描笔记，并更新：
 
-```ts
-{
-    text: 'project review',
-    items: [
-        { text: 'Course System', link: '/projects/course-system' },
-        { text: 'Recommendation System', link: '/projects/recommendation-system' },
-    ]
-}
-```
+- 首页的“最近更新”
+- 对应分类页的“已整理”
+- VitePress 侧边栏
 
-注意：
-
-- `link` 不需要写 `.md` 后缀。
-- `docs/projects/recommendation-system.md` 对应的链接是 `/projects/recommendation-system`。
-- 如果只是临时记录，也可以先不加到侧边栏，通过文件路径访问。
+`npm run docs:dev` 和 `npm run docs:build` 也会在执行前自动运行这个脚本。没有一级标题的 Markdown 文件不会发布到列表；如果需要暂时隐藏一篇完整笔记，可以在 frontmatter 中加入 `draft: true`。
 
 ### 3. 本地检查
 
@@ -180,5 +175,5 @@ https://zxhysy2003.github.io/
 
 - 不要手动提交 `node_modules/`。
 - 不要手动提交 `docs/.vitepress/dist/`，它是构建产物，已经在 `.gitignore` 中忽略。
-- 新增笔记后，如果希望首页也能看到，可以同步编辑 `docs/index.md`。
+- 首页、分类页和侧边栏中的笔记列表由脚本维护，不需要手工编辑。
 - 如果只是修改已有笔记，通常只需要改对应的 `.md` 文件，然后执行 `git add`、`git commit`、`git push`。

@@ -30,8 +30,11 @@ features:
 
 ## 最近更新
 
+<!-- AUTO-GENERATED-NOTES:START -->
+- [WSL 从 Bash 切换到 Zsh，并安装 Oh My Zsh 全流程笔记](/tools/wsl_zsh_oh_my_zsh_notes)
 - [智能课程学习系统项目复盘](/projects/course-system)
 - [WSL 端口占用问题](/pitfalls/端口占用--wsl)
+<!-- AUTO-GENERATED-NOTES:END -->
 
 ## 后续整理
 
