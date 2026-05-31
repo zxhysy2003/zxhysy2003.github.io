@@ -15,6 +15,10 @@ https://zxhysy2003.github.io/
 ├── docs/                       # VitePress 文档目录
 │   ├── index.md                # 首页
 │   ├── projects/               # 项目复盘
+│   │   ├── java/               # Java 项目复盘
+│   │   └── agent/              # Agent 项目复盘
+│   ├── java/                   # Java 后端学习笔记
+│   ├── agents/                 # Agent 开发学习笔记
 │   ├── pitfalls/               # 踩坑记录
 │   └── .vitepress/
 │       └── config.mts          # 导航栏和侧边栏配置
@@ -63,7 +67,10 @@ npm run docs:preview
 在 `docs/` 下选择合适的分类目录，例如：
 
 ```text
-docs/projects/        项目复盘
+docs/projects/java/   Java 项目复盘
+docs/projects/agent/  Agent 项目复盘
+docs/java/            Java 后端学习笔记
+docs/agents/          Agent 开发学习笔记
 docs/pitfalls/        踩坑记录
 docs/algorithms/      算法笔记
 docs/tools/           工具使用
@@ -72,7 +79,9 @@ docs/tools/           工具使用
 如果目录不存在，先创建目录。文件名建议使用小写英文和短横线，例如：
 
 ```text
-docs/projects/recommendation-system.md
+docs/projects/java/course-system.md
+docs/projects/agent/rag-assistant.md
+docs/agents/tool-calling-notes.md
 docs/pitfalls/git-pages-deploy.md
 ```
 
@@ -103,6 +112,8 @@ npm run notes:update
 - VitePress 侧边栏
 
 `npm run docs:dev` 和 `npm run docs:build` 也会在执行前自动运行这个脚本。没有一级标题的 Markdown 文件不会发布到列表；如果需要暂时隐藏一篇完整笔记，可以在 frontmatter 中加入 `draft: true`。
+
+需要新增分类、调整项目分组或修改排序规则时，参考 [`scripts/README.md`](./scripts/README.md)。
 
 ### 3. 本地检查
 

@@ -5,6 +5,7 @@
 ## 已整理
 
 <!-- AUTO-GENERATED-NOTES:START -->
+- [vim常见操作](/tools/vim常见操作)
 - [WSL 从 Bash 切换到 Zsh，并安装 Oh My Zsh 全流程笔记](/tools/wsl_zsh_oh_my_zsh_notes)
 <!-- AUTO-GENERATED-NOTES:END -->
 

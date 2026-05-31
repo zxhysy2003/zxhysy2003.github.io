@@ -2,10 +2,15 @@
 
 这里收录我做过的项目复盘，重点记录项目背景、技术选型、核心功能、实现难点和后续改进方向。
 
+## 项目分类
+
+- [Java 项目](./java/)
+- [Agent 项目](./agent/)
+
 ## 已整理
 
 <!-- AUTO-GENERATED-NOTES:START -->
-- [智能课程学习系统项目复盘](/projects/course-system)
+- [智能课程学习系统项目复盘](/projects/java/course-system)
 <!-- AUTO-GENERATED-NOTES:END -->
 
 ## 待整理
